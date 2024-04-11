@@ -1,0 +1,144 @@
+/* style.css */
+body, html {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    padding: 10px;
+    background-color: #e9ecef;
+    margin: 0;
+    height: 100%;
+}
+
+#login {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input[type="password"] {
+    padding: 10px;
+    margin-right: 10px;
+    border: 2px solid #007bff;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.card {
+    width: 150px;
+    height: 200px;
+    margin: 10px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+    border-radius: 8px;
+    position: relative;
+    overflow: hidden;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+#cardDetail {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid black;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    display: none;
+    width: 500px;
+    border-radius: 10px;
+    z-index: 1000;
+}
+
+#cardDetail img {
+    width: 200px;
+}
+
+.card-title {
+    color: #007bff;
+    margin-bottom: 20px;
+}
+
+.card-content {
+    color: #333;
+}
+@media (max-width:768px){
+    #login {
+        flex-direction: column;  /* 切換至垂直佈局 */
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+    }
+
+    input[type="password"] {
+        width: 80%;  /* 增加輸入框的寬度 */
+        padding: 15px;  /* 增加輸入框的內填充，使其更容易點擊 */
+        font-size: 18px;  /* 增加輸入框文字的大小，提高可讀性 */
+        margin-bottom: 20px;  /* 增加與按鈕之間的間距 */
+    }
+    button {
+        width: 80%;  /* 按鈕寬度增加至接近滿屏 */
+        padding: 15px;  /* 增加按鈕的內填充，易於觸控 */
+        font-size: 18px;  /* 按鈕文字大小增大 */
+    }
+
+    .card-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 80%;  /* 在小屏幕上使卡片寬度近乎滿屏 */
+        margin: 20px 0;  /* 增加垂直間距 */
+        height: 300px;  /* 增加卡片的高度，使其更容易點擊和查看 */
+        padding: 10px;
+        font-size: 20px;  /* 增加文字大小，改善可讀性 */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #cardDetail {
+        width: 80%;  /* 彈出視窗寬度近乎滿屏 */
+        height: 40%;  /* 彈出視窗高度增加，便於展示更多內容 */
+        overflow-y: auto;  /* 添加滾動條以顯示更長的內容 */
+        padding: 20px;  /* 增加內部空間 */
+        font-size: 18px;  /* 增加彈出視窗中文字的大小 */
+    }
+
+    button {
+        width: auto;  /* 按鈕寬度自動，適應文字長度 */
+        padding: 15px 30px;  /* 增加按鈕的填充，易於觸控 */
+        font-size: 18px;  /* 增加按鈕文字大小，提高可讀性 */
+    }
+}
+

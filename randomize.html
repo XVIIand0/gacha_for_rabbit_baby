@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <title>密碼保護的卡片選擇</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="login">
+        <input type="password" id="passwordInput" placeholder="請輸入密碼">
+        <button onclick="checkPassword()">登入</button>
+    </div>
+
+    <div id="cards" style="display:none;">
+        <div class="card-container">
+            <!-- 生成20張卡片 -->
+            <!-- 此部分可透過JavaScript動態生成以減少代碼冗餘 -->
+        </div>
+        <div id="cardDetail" style="display:none;">
+            <h2 id="cardTitle"></h2>
+            <p id="cardContent"></p>
+            <button onclick="hideDetails()">關閉詳情</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
