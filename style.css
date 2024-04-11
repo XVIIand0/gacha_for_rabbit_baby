@@ -23,7 +23,7 @@ input[type="password"] {
 }
 
 button {
-    padding: 10px 20px;
+    padding: 20px 50px;
     background-color: #007bff;
     color: white;
     border: none;
@@ -79,9 +79,9 @@ button:hover {
     z-index: 1000;
 }
 
-#cardDetail img {
+/* #cardDetail img {
     width: 200px;
-}
+} */
 
 .card-title {
     color: #007bff;
@@ -91,7 +91,7 @@ button:hover {
 .card-content {
     color: #333;
 }
-@media (max-width:768px){
+@media (min-width:768px){
     #login {
         flex-direction: column;  /* 切換至垂直佈局 */
         justify-content: center;
@@ -101,16 +101,10 @@ button:hover {
 
     input[type="password"] {
         width: 80%;  /* 增加輸入框的寬度 */
-        padding: 15px;  /* 增加輸入框的內填充，使其更容易點擊 */
-        font-size: 18px;  /* 增加輸入框文字的大小，提高可讀性 */
-        margin-bottom: 20px;  /* 增加與按鈕之間的間距 */
+        padding: 40px;  /* 增加輸入框的內填充，使其更容易點擊 */
+        font-size: 40px;  /* 增加輸入框文字的大小，提高可讀性 */
+        margin-bottom: 30px;  /* 增加與按鈕之間的間距 */
     }
-    button {
-        width: 80%;  /* 按鈕寬度增加至接近滿屏 */
-        padding: 15px;  /* 增加按鈕的內填充，易於觸控 */
-        font-size: 18px;  /* 按鈕文字大小增大 */
-    }
-
     .card-container {
         flex-direction: column;
         align-items: center;
@@ -129,16 +123,27 @@ button:hover {
 
     #cardDetail {
         width: 80%;  /* 彈出視窗寬度近乎滿屏 */
-        height: 40%;  /* 彈出視窗高度增加，便於展示更多內容 */
+        height: 960px;  /* 彈出視窗高度增加，便於展示更多內容 */
         overflow-y: auto;  /* 添加滾動條以顯示更長的內容 */
         padding: 20px;  /* 增加內部空間 */
         font-size: 18px;  /* 增加彈出視窗中文字的大小 */
     }
 
+    #cardDetail h2 {
+        font-size: 48px;
+    }
+    #cardDetail p {
+        font-size: 32px;
+    }
+
+    #cardDetail img {
+        height: 650px;
+    }
+
     button {
         width: auto;  /* 按鈕寬度自動，適應文字長度 */
-        padding: 15px 30px;  /* 增加按鈕的填充，易於觸控 */
-        font-size: 18px;  /* 增加按鈕文字大小，提高可讀性 */
+        padding: 20px 50px;  /* 增加按鈕的填充，易於觸控 */
+        font-size: 40px;  /* 增加按鈕文字大小，提高可讀性 */
     }
 }
 
